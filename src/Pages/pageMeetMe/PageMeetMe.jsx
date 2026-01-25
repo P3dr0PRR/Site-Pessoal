@@ -16,7 +16,7 @@ export function PageMeetMe() {
         isDark
           ? "bg-gradient-to-r from-slate-900 to-slate-700"
           : "bg-gradient-to-r from-blue-200 to-cyan-200"
-      } py-12 px-8 sm:px-10 lg:px-12`}
+      } py-12 px-8 sm:px-10 lg:px-12 cursor-default`}
     >
       <div className="flex flex-col items-center justify-center gap-6">
         <img
@@ -32,7 +32,7 @@ export function PageMeetMe() {
         <ButtonLightDark isDark={isDark} toggleTheme={toggleTheme} />
         <LinksTo isDark={isDark} />
         <p
-          className={`mt-4 text-center ${isDark ? "text-yellow-600" : "text-zinc-800"}`}
+          className={`mt-4 text-center  ${isDark ? "text-yellow-600" : "text-zinc-800"}`}
         >
           Conteudo criado para ampliar meus conhecimentos :D
         </p>
