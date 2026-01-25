@@ -1,14 +1,6 @@
-import { useState } from "react";
 import { Sun, Moon } from "lucide-react";
 
-export function ButtonLightDark() {
-  const [isDark, setIsDark] = useState(false);
-
-  const toggleTheme = () => {
-    setIsDark(!isDark);
-    document.documentElement.classList.toggle("dark");
-  };
-
+export function ButtonLightDark({ isDark, toggleTheme }) {
   return (
     <div className={isDark ? "dark" : ""}>
       <div className=" flex items-center justify-center">
