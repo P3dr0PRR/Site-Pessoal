@@ -17,6 +17,7 @@ export function PageMeetMe() {
         </h1>
         <ButtonLightDark />
         <LinksTo />
+        Conteudo criado para ampliar meus conhecimentos :D
       </div>
     </div>
   );
