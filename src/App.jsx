@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import { PageMeetMe } from "./Pages/PageMeetMe";
+import { PageMeetMe } from "./Pages/pageMeetMe/PageMeetMe";
 const App = () => {
   return (
     <div>
