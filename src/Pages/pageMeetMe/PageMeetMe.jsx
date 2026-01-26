@@ -27,6 +27,8 @@ export function PageMeetMe() {
           <img
             src={pedroImage}
             alt="Foto de Pedro"
+            loading="eager"
+            decoding="async"
             className={`relative z-10 w-28 h-28 md:w-32 md:h-32 rounded-full object-cover border-4 ring-2 ring-blue-500 shadow-lg border-blue-500 ${isDark ? "shadow-white/40" : "shadow-blue-300"} `}
           />
         </div>
