@@ -6,6 +6,7 @@ export default {
       backgroundImage: {
         "tcpi-gradient": "linear-gradient(#6d94bf, #446e9b 50%, #3e648d)",
         "tcpi-gradient-hover": "linear-gradient(#5a7ca2, #516e99 50%, #385a7f)",
+        sideral: "url('/fotos/bgsideral.png')",
       },
       colors: {
         tcpi: {

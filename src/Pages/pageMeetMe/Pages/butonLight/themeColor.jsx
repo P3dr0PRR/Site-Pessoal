@@ -6,7 +6,7 @@ export function ButtonLightDark({ isDark, toggleTheme }) {
       <div className=" flex items-center justify-center">
         <button
           onClick={toggleTheme}
-          className="relative p-2 rounded-full bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition-all duration-300 shadow-lg"
+          className="relative p-2 rounded-full bg-gray-200 dark:bg-gray-700 dark:border-2 dark:border-blue-500 hover:bg-gray-300 dark:hover:bg-gray-600 transition-all duration-300 shadow-lg hover:scale-110  "
           aria-label="Toggle theme"
         >
           <Sun
@@ -16,7 +16,7 @@ export function ButtonLightDark({ isDark, toggleTheme }) {
           />
           <Moon
             className={`w-4 h-4 text-blue-300 transition-all duration-300 ${
-              isDark ? "opacity-100 rotate-0" : "opacity-0 -rotate-90"
+              isDark ? "opacity-100 rotate-0" : "opacity-0 -rotate-90 "
             }`}
           />
         </button>
