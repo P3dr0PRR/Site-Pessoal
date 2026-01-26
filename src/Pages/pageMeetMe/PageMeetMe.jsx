@@ -40,7 +40,7 @@ export function PageMeetMe() {
         <ButtonLightDark isDark={isDark} toggleTheme={toggleTheme} />
         <LinksTo isDark={isDark} />
         <p
-          className={`mt-4 text-center  ${isDark ? "bg-white/20 rounded-md text-white" : "text-zinc-800"}`}
+          className={`mt-4 text-center  ${isDark ? "bg-black/80 rounded-md text-gray-100 ring-2 ring-blue-500 px-1" : "text-zinc-800"}`}
         >
           Conteudo criado para ampliar meus conhecimentos :D
         </p>
