@@ -12,14 +12,12 @@ export function PageMeetMe() {
 
   return (
     <div
-      className={`min-h-screen py-12 px-8 sm:px-10 lg:px-12 cursor-default`}
-      style={{
-        backgroundImage: isDark
-          ? "url('/bgsideral.png')"
-          : "linear-gradient(to right, #bfdbfe, #06b6d4)",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
+      className={`min-h-screen py-12 px-8 sm:px-10 lg:px-12 cursor-default
+    ${
+      isDark
+        ? "bg-gradient-to-br from-slate-950 via-slate-900 to-blue-950"
+        : "bg-gradient-to-r from-blue-400 to-cyan-600"
+    }`}
     >
       <div className="flex flex-col items-center justify-center gap-6">
         <div className="relative inline-flex transition-all hover:scale-105">
@@ -29,14 +27,26 @@ export function PageMeetMe() {
             alt="Foto de Pedro"
             loading="eager"
             decoding="async"
-            className={`relative z-10 w-28 h-28 md:w-32 md:h-32 rounded-full object-cover border-4 ring-2 ring-blue-500 shadow-lg border-blue-500 ${isDark ? "shadow-white/40" : "shadow-blue-300"} `}
+            className={`relative z-10 w-28 h-28 md:w-32 md:h-32 rounded-full object-cover border-4 ring-2  ${isDark ? "shadow-white/40 ring-blue-600 shadow-lg border-blue-600" : "shadow-blue-300 ring-blue-700 shadow-lg border-blue-700"} `}
           />
         </div>
-        <h1
-          className={`mt-6 text-xl md:text-2xl font-bold text-center ${isDark ? "text-white" : "text-zinc-800"}`}
-        >
-          Olá, eu sou Pedro!
-        </h1>
+        <div className="flex flex-col">
+          <h2
+            className={`mt-6 text-md md:text-xl font-bold text-center ${isDark ? "text-white" : "text-zinc-800"}`}
+          >
+            Olá, eu sou
+          </h2>
+          <h1
+            className={` text-xl md:text-2xl font-bold text-center ${isDark ? "text-white" : "text-zinc-800"}`}
+          >
+            Pedro Paulo
+          </h1>
+          <h2
+            className={` text-md md:text-xlfont-bold text-center ${isDark ? "text-white" : "text-zinc-800"}`}
+          >
+            Front-end Jr | JS • React • TailwindCSS
+          </h2>
+        </div>
         <ButtonLightDark isDark={isDark} toggleTheme={toggleTheme} />
         <LinksTo isDark={isDark} />
         <p

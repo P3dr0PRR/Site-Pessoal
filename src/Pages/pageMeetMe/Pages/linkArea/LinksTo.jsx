@@ -3,15 +3,15 @@ import React, { useState } from "react";
 export function LinksTo({ isDark }) {
   return (
     <div
-      className={`flex flex-col p-4 rounded-lg shadow-lg gap-4 text-xl ${isDark ? "bg-gray-800/70" : "bg-sky-100 text-gray-900"}`}
+      className={`flex flex-col p-4 rounded-lg shadow-lg gap-4 text-xl ${isDark ? "bg-gray-800/70 ring-2 ring-blue-500" : "bg-sky-100 text-gray-900"}`}
     >
       <a
         target="_blank"
         rel="noopener noreferrer"
-        className={`rounded-lg p-2 border-2 ${isDark ? "bg-gray-800 border-gray-800 text-gray-100 hover:bg-blue-800/80 hover:border-blue-500" : "bg-sky-200/80 hover:bg-sky-300 hover:border-sky-400"} text-center hover:scale-105 transition-transform duration-300`}
+        className={`rounded-lg p-2 px-12 border-2 ${isDark ? "bg-gray-800 border-gray-800 text-gray-100 hover:bg-blue-800/80 hover:border-blue-500" : "bg-sky-200/80 hover:bg-sky-300 hover:border-sky-400"} text-center hover:scale-105 transition-transform duration-300`}
         href="https://portif-4wn5ianem-pedros-projects-dd604c73.vercel.app/"
       >
-        Ver meu Portifolio
+        Ver Projetos
       </a>
 
       <a
