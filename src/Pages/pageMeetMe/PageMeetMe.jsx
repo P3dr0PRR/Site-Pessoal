@@ -30,9 +30,11 @@ export function PageMeetMe() {
             className={`relative z-10 w-28 h-28 md:w-32 md:h-32 rounded-full object-cover border-4 ring-2  ${isDark ? "shadow-white/40 ring-blue-600 shadow-lg border-blue-600" : "shadow-blue-300 ring-blue-700 shadow-lg border-blue-700"} `}
           />
         </div>
-        <div className="flex flex-col">
+        <div
+          className={`flex flex-col ${isDark ? "text-zinc-800" : "bg-sky-100/60 text-gray-900 rounded-md items-center justify-center px-4 pb-2 shadow-lg shadow-blue-300/50 ring-2 ring-blue-500"}`}
+        >
           <h2
-            className={`mt-6 text-md md:text-xl font-bold text-center ${isDark ? "text-white" : "text-zinc-800"}`}
+            className={`mt-6 text-md md:text-xl text-center ${isDark ? "text-white" : "text-zinc-800"}`}
           >
             Olá, eu sou
           </h2>
@@ -42,7 +44,7 @@ export function PageMeetMe() {
             Pedro Paulo
           </h1>
           <h2
-            className={` text-md md:text-xlfont-bold text-center ${isDark ? "text-white" : "text-zinc-800"}`}
+            className={` text-md md:text-xl text-center ${isDark ? "text-white" : "text-zinc-800"}`}
           >
             Front-end Jr | JS • React • TailwindCSS
           </h2>
@@ -50,7 +52,7 @@ export function PageMeetMe() {
         <ButtonLightDark isDark={isDark} toggleTheme={toggleTheme} />
         <LinksTo isDark={isDark} />
         <p
-          className={`mt-4 text-center  ${isDark ? "bg-black/80 rounded-md text-gray-100 ring-2 ring-blue-500 px-1" : "text-zinc-800"}`}
+          className={`mt-4 text-center  ${isDark ? "bg-black/80 rounded-md text-gray-100 ring-2 ring-blue-500 px-1" : "bg-sky-100/60 text-gray-900 rounded-md items-center justify-center px-4  shadow-lg shadow-blue-300/50 ring-2 ring-blue-500"}`}
         >
           Conteudo criado para ampliar meus conhecimentos :D
         </p>
