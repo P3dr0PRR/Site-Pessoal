@@ -12,7 +12,7 @@ export function PageMeetMe() {
 
   return (
     <div
-      className={`min-h-screen py-12 px-8 sm:px-10 lg:px-12 cursor-default
+      className={`min-h-screen py-4 px-8 sm:px-10 lg:px-12 cursor-default
     ${
       isDark
         ? "bg-gradient-to-br from-slate-950 via-slate-900 to-blue-950"
