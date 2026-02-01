@@ -9,7 +9,7 @@ export function LinksTo({ isDark }) {
         target="_blank"
         rel="noopener noreferrer"
         className={`rounded-lg p-2 px-12 border-2 ${isDark ? "bg-gray-800 border-gray-800 text-gray-100 hover:bg-blue-800/80 hover:border-blue-500" : "bg-sky-200/80 hover:bg-sky-300 hover:border-sky-400"} text-center hover:scale-105 transition-transform duration-300`}
-        href="https://portif-4wn5ianem-pedros-projects-dd604c73.vercel.app/"
+        href="https://portif-lio-gilt-pi.vercel.app/"
       >
         Ver Projetos
       </a>
