@@ -31,7 +31,7 @@ export function PageMeetMe() {
           />
         </div>
         <div
-          className={`flex flex-col ${isDark ? "text-zinc-800" : "bg-sky-100/60 text-gray-900 rounded-md items-center justify-center px-4 pb-2 shadow-lg shadow-blue-300/50 ring-2 ring-blue-500"}`}
+          className={`flex flex-col ${isDark ? "text-zinc-800" : "bg-sky-100/60 text-gray-900 rounded-md items-center justify-center px-4 shadow-lg shadow-blue-300/50 ring-2 ring-blue-500"}`}
         >
           <h2
             className={`mt-6 text-md md:text-xl text-center ${isDark ? "text-white" : "text-zinc-800"}`}
@@ -52,7 +52,7 @@ export function PageMeetMe() {
         <ButtonLightDark isDark={isDark} toggleTheme={toggleTheme} />
         <LinksTo isDark={isDark} />
         <p
-          className={`mt-4 text-center  ${isDark ? "bg-black/80 rounded-md text-gray-100 ring-2 ring-blue-500 px-1" : "bg-sky-100/60 text-gray-900 rounded-md items-center justify-center px-4  shadow-lg shadow-blue-300/50 ring-2 ring-blue-500"}`}
+          className={`mt-4 text-center  ${isDark ? "bg-black/80 rounded-md text-gray-100 ring-2 ring-blue-500 px-4" : "bg-sky-100/60 text-gray-900 rounded-md items-center justify-center px-4  shadow-lg shadow-blue-300/50 ring-2 ring-blue-500"}`}
         >
           Conteudo criado para ampliar meus conhecimentos :D
         </p>
