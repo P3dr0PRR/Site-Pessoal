@@ -3,7 +3,7 @@ import React, { useState } from "react";
 export function LinksTo({ isDark }) {
   return (
     <div
-      className={`flex flex-col p-4 rounded-lg shadow-lg gap-4 text-xl ${isDark ? "bg-gray-800/70 ring-2 ring-blue-500" : "bg-sky-100 text-gray-900"}`}
+      className={`flex flex-col mt-2 p-4 rounded-lg shadow-lg gap-4 text-xl ${isDark ? "bg-gray-800/70 ring-2 ring-blue-500" : "bg-sky-100 text-gray-900"}`}
     >
       <a
         target="_blank"

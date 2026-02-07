@@ -2,11 +2,7 @@ import React, { useState } from "react";
 
 import { PageMeetMe } from "./Pages/pageMeetMe/PageMeetMe";
 const App = () => {
-  return (
-    <div>
-      <PageMeetMe />
-    </div>
-  );
+  return <PageMeetMe />;
 };
 
 export default App;
